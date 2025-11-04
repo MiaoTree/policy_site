@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 关键：确保移动端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载票忆</title>
+    <!-- 引入 Tailwind CSS 以实现快速、响应式的样式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 简单的自定义字体 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <!-- 主卡片 -->
+        <div class="bg-white dark:bg-gray-800 shadow-2xl rounded-2xl p-8 max-w-sm w-full">
+            <div class="flex flex-col items-center">
+                <!-- 1. App 图标 (请替换为你的图标URL) -->
+                <img 
+                    src="https://placehold.co/128x128/5050E5/FFFFFF?text=票忆" 
+                    alt="App Logo" 
+                    class="w-32 h-32 rounded-3xl shadow-lg mb-4"
+                >
+
+                <!-- 2. App 名称 (请替换) -->
+                <h1 class="text-3xl font-bold text-gray-900 dark:text-white">
+                    票忆:珍藏每段票根回忆
+                </h1>
+
+                <!-- 3. App 版本号 (请替换) -->
+                <p class="text-gray-500 dark:text-gray-400 mt-1 mb-6">
+                    版本 v1.0
+                </p>
+
+                <p class="text-center text-gray-600 dark:text-gray-300 mb-8">
+                    点击下方按钮，立即下载并安装Android应用。
+                </p>
+
+                <!-- 4. 下载按钮 (请替换URL) -->
+                <a 
+                    id="downloadButton"
+                    href="https://ofkll8nuh1.feishu.cn/file/WbcUbeKFGoEt2bxGx4PclzBenyg?from=from_copylink" 
+                    class="w-full bg-blue-600 text-white text-lg font-semibold py-4 px-6 rounded-xl shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-300 ease-in-out text-center"
+                    download
+                >
+                    立即下载 (.apk)
+                </a>
+
+                <p class="text-xs text-gray-400 dark:text-gray-500 mt-6 text-center">
+                    如果下载未开始，请检查您的浏览器权限。<br>安装时可能需要您允许“安装未知来源的应用”。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
